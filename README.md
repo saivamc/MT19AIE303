@@ -4,7 +4,7 @@
 cloud_assessment1 is the project repository where the web app files reside.
 Created a dockerfile inside the root of the repository as below:
   </section>
-  
+ <br/><br/> 
 ![dockerfile](https://user-images.githubusercontent.com/62174158/131689024-f92040b6-bdc7-47a7-b6c6-0b9b69db7676.png)
 <br/><br/>
 <section>
@@ -17,7 +17,10 @@ PYTHONUNBUFFERED ensures that the python output is being sent straight to the te
 docker container's filesystem
   </section>
 <br/><br/>
-![image](https://user-images.githubusercontent.com/62174158/131687276-6dd6ef13-f9b7-41ed-b05f-3f594a5e6a5a.png)
+
+![requirements](https://user-images.githubusercontent.com/62174158/131689961-94b401a7-7183-4192-a2a5-a9c871a7c148.png)
+
+ <br/><br/>
 
 <section>
 'RUN pip install -r requirements.txt' will run pip install command for the list of applications that we require.
