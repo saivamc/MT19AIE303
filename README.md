@@ -2,8 +2,11 @@
 <p1>
 <br/><br/>
   <section>
+    
 - cloud_assessment1 is the project repository where the web app files reside.
+    
 - Created a dockerfile inside the root of the repository as below:
+    
   </section>
  <br/><br/> 
 
@@ -11,13 +14,17 @@
   
 <br/><br/>
 <section>
-- 'FRRM' creates a layer from the python:3.6 docker image
-- 'ENV PYTHONUNBUFFERED' creates a Environmental Variable called PYTHONUNBUFFERED and sets it to 1. Setting a value to 
-PYTHONUNBUFFERED ensures that the python output is being sent straight to the terminal without being first buffered.
+  
+- 'FROM' creates a layer from the python:3.6 docker image
+  
+- 'ENV PYTHONUNBUFFERED' creates a Environmental Variable called PYTHONUNBUFFERED and sets it to 1. Setting a value to PYTHONUNBUFFERED ensures that the python output is being sent straight to the terminal without being first buffered.
+  
 - 'RUN mkdir /cloud_assessment1' creates cloud_assessment1 directory inside the file system of our container.
+  
 - 'WORKDIR /cloud_assessment1' makes cloud_assessment1 as working directory
-- 'ADD requirements.txt /cloud_assessment1/' command will copy requirements.txt file from local repository to the 
-docker container's filesystem
+  
+- 'ADD requirements.txt /cloud_assessment1/' command will copy requirements.txt file from local repository to the docker container's filesystem
+  
   </section>
 <br/><br/>
 
@@ -26,12 +33,14 @@ docker container's filesystem
  <br/><br/>
 
 <section>
+  
 - 'RUN pip install -r requirements.txt' will run pip install command for the list of applications that we require.
 
 - 'ADD . /cloud_assessment1/' copies all the files from the cloud_assessment1 repository to the container's filesystem
 
 - Next, I have created a YAML(Yet Another Markup Language) file called 'docker-compose.yml' where I specified configuration for
 my django web server and mysql database server.
+  
   </section>
 
 ![image](https://user-images.githubusercontent.com/62174158/131687417-eb469641-594c-47d9-9d9a-77e53d5aaf2f.png)
