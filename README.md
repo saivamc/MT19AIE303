@@ -61,8 +61,7 @@ statement and run a 'docker build' for each one.
   
 ![docker-compose-build](https://user-images.githubusercontent.com/62174158/131687787-c0b33928-2743-4356-8ee4-b79754f302cb.png)
 
-- Next I have run 'docker-compose build': docker-compose build will read docker-compose.yml, look for all services containing in the build: 
-statement and run a 'docker build' for each one.
+- Next I have run 'docker-compose up' which builds, (re)creates, starts, and attaches to containers for a service.
   
 ![docker-compose-up-1](https://user-images.githubusercontent.com/62174158/131687948-99dc5d4a-eda7-4b02-8c68-01b19189f96c.png)
 
